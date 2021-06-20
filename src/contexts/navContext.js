@@ -6,6 +6,7 @@ export const NavContext = createContext();
 const NavProvider = ({ children }) => {
   const [facModalOpen, setFacModalOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   const facilityDetail = [
     {
@@ -22,7 +23,7 @@ const NavProvider = ({ children }) => {
     },
     {
       img: homeLoc,
-      title: "Find Nearby Facilities",
+      title: "Find Nearby Providers",
       list: [
         "Family Medicine",
         "Internal Medicine",
@@ -34,7 +35,7 @@ const NavProvider = ({ children }) => {
     },
     {
       img: homeLoc,
-      title: "Find Nearby Facilities",
+      title: "Find Nearby Services",
       list: [
         "Family Medicine",
         "Internal Medicine",
@@ -52,6 +53,9 @@ const NavProvider = ({ children }) => {
   const closeModal = (modal) => {
     modal(false);
   };
+  const toggleModal = (modal, state) => {
+    modal(!state);
+  };
   const contextVal = {
     status: {
       facility: {
@@ -62,10 +66,15 @@ const NavProvider = ({ children }) => {
         loginModalOpen,
         setLoginModalOpen,
       },
+      mobileNav: {
+        navOpen,
+        setNavOpen,
+      },
     },
     functions: {
       openModal,
       closeModal,
+      toggleModal,
     },
     data: {
       facilityDetail,
