@@ -88,8 +88,8 @@ const SignIn = () => {
               </div>
             </div>
           </main>
-          <footer className="flex justify-between mt-6 items-center">
-            <button className="flex text-gray-500 font-bold bg-white px-5 py-2 shadow-sm rounded-md text-sm items-center">
+          <footer className="flex sm:flex-col md:flex-col w-full sm:space-y-4 md:space-y-4 justify-between mt-6 items-center">
+            <button className="flex text-gray-500 font-bold bg-white px-5 py-2 sm:w-6/12 md:w-6/12 shadow-sm rounded-md text-sm items-center">
               <img
                 className="w-7 h-7 mr-2"
                 src="https://img.icons8.com/color/48/000000/google-logo.png"
@@ -97,11 +97,11 @@ const SignIn = () => {
               />
               Google
             </button>
-            <button className="flex text-white bg-facebook font-bold px-5 py-2 rounded-md text-sm items-center">
+            <button className="flex text-white bg-facebook font-bold px-5 py-2 sm:w-6/12 md:w-6/12 rounded-md text-sm items-center">
               <AiFillFacebook className="w-7 h-7 rounded-xl mr-2 text-white" />
               Facebook
             </button>
-            <button className="flex text-white bg-twitter font-bold px-5 py-2 rounded-md text-sm items-center">
+            <button className="flex text-white bg-twitter font-bold px-5 py-2 sm:w-6/12 md:w-6/12 rounded-md text-sm items-center">
               <AiOutlineTwitter className="w-7 h-7 mr-2 text-white" /> Twitter
             </button>
           </footer>
