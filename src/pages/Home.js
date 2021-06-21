@@ -40,11 +40,11 @@ const Home = () => {
       </section>
       {/*  */}
       {/* Providers section */}
-      <section>
+      <section className="w-full">
         <Providers />
       </section>
       {/* Facilities section */}
-      <section className="w-full  sm:space-y-20 md:space-y-20 space-x-20">
+      <section className="w-full sm:space-y-20 md:space-y-20 space-x-20">
         <div className="w-10/12 mx-auto flex sm:flex-col md:flex-col justify-center items-center">
           <div className="w-5/12 sm:w-11/12 md:w-9/12 ">
             <PFWriteUp
@@ -68,7 +68,7 @@ const Home = () => {
         </div>
       </section>
       {/* Download app section */}
-      <section className="mt-20">
+      <section className="w-full mt-20">
         <DownloadComponent />
       </section>
       {/* Offers section */}

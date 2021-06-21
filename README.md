@@ -7,6 +7,10 @@ And styled using [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all packages needed for the project to run, which can be found in the package.json file
+
 ### `npm run start`
 
 Runs the app in the development mode.\

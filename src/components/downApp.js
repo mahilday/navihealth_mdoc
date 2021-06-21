@@ -1,13 +1,14 @@
-import mobile2 from '../assets/mobile2.png'
-import GreyBg from '../assets/grey-bg.png'
-import PFWriteUp from './provFacWriteUp';
+import mobile2 from "../assets/mobile2.png";
+import GreyBg from "../assets/grey-bg.png";
+import PFWriteUp from "./provFacWriteUp";
 const DownloadComponent = () => {
-    return ( 
-        <div
+  return (
+    <div
       style={{
         background: `url(${GreyBg})`,
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "bottom",
+        backgroundSize: "cover",
       }}
       className="w-full"
     >
@@ -24,7 +25,7 @@ const DownloadComponent = () => {
         </div>
       </section>
     </div>
-     );
-}
- 
+  );
+};
+
 export default DownloadComponent;

@@ -13,6 +13,7 @@ const Providers = () => {
         background: `url(${GreyBg})`,
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "bottom",
+        backgroundSize: "cover",
       }}
       className="w-full"
     >
