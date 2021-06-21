@@ -1,6 +1,6 @@
 # mDoc Navihealth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 And styled using [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
 
 ## Available Scripts
@@ -11,9 +11,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [navihealthmd.netlify.app](https://navihealthmd.netlify.app/) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
