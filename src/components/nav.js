@@ -20,7 +20,7 @@ const Nav = () => {
           </Link>
           <nav className=" items-center space-x-12 hidden lg:flex xl:flex">
             <p className="cursor-pointer text-lg text-gray-free active:text-green-free hover:text-green-free">
-              <Link to="/provider"> Find a Provider </Link>
+              <Link to="/provider" className="font-semibold"> Find a Provider </Link>
             </p>
             <p
               onClick={() =>
@@ -29,7 +29,7 @@ const Nav = () => {
                   status.facility.facModalOpen
                 )
               }
-              className="cursor-pointer active:text-green-free text-lg text-gray-free hover:text-green-free"
+              className="cursor-pointer font-semibold active:text-green-free text-lg text-gray-free hover:text-green-free"
             >
               Find a Facility
             </p>

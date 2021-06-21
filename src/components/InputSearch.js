@@ -12,7 +12,7 @@ const InputSearch = ({ title }) => {
             Search
           </h2>
           <input
-            className="focus:outline-none p-3 w-3/4 sm:text-xl text-2xl border-none"
+            className="focus:outline-none focus:ring-transparent focus:border-none  p-3 w-3/4 sm:text-xl text-2xl border-none"
             type="text"
             placeholder="Facilities, Providers, Services"
           />
@@ -22,13 +22,13 @@ const InputSearch = ({ title }) => {
             Near
           </h2>
           <input
-            className=" focus:outline-none sm:text-xl p-3 w-3/4 text-2xl border-none"
+            className=" focus:outline-none focus:ring-transparent focus:border-none sm:text-xl p-3 w-3/4 text-2xl border-none"
             type="text"
             placeholder="City, State"
           />
         </div>
         <div className="sm:w-5/6">
-          <button className="btnOrange sm:w-full font-semibold text-2xl h-20  ">
+          <button className="btnOrange sm:w-full w-60 font-semibold text-2xl h-20  ">
             Search
           </button>
         </div>

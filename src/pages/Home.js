@@ -14,7 +14,7 @@ import Offers from "../components/offers";
 const Home = () => {
   const { data } = useContext(HomeContext);
   return (
-    <div className="w-full relative space-y-32 h-screen">
+    <div className="w-full relative space-y-24 h-screen">
       {/* top landing image with search bar */}
       <section id="topLanding" className="w-full relative h-screen">
         <img className="w-full object-cover h-5/6" src={callBg} alt="homepic" />
