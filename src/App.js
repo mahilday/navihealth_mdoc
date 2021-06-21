@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./components/nav";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Provider from "./pages/Provider";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/provider" component={Provider} />
         </Switch>
       </div>
     </Router>

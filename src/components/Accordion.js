@@ -23,7 +23,7 @@ const Accordion = ({ title, list, endNote }) => {
         </h2>
       </div>
       <div ref={content} className={`w-42 space-y-2  ml-1 my-2 ${setDisplay}`}>
-        {list.map((faclist) => (
+        {list.map((faclist, index) => (
           <div className="font-normal" key={faclist}>
             {faclist}
           </div>

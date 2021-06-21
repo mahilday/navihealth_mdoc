@@ -5,12 +5,15 @@ import App from "./App";
 import NavProvider from "./contexts/navContext";
 import reportWebVitals from "./reportWebVitals";
 import HomeProvider from "./contexts/HomeContext";
+import ProvProvider from "./contexts/providerContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <NavProvider>
       <HomeProvider>
+        <ProvProvider>
         <App />
+        </ProvProvider>
       </HomeProvider>
     </NavProvider>
   </React.StrictMode>,
