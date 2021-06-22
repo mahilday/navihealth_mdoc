@@ -1,6 +1,4 @@
-import {
-  FilterIcon,
-} from "@heroicons/react/solid";
+import { FilterIcon } from "@heroicons/react/solid";
 import Checkbox from "../components/Checkbox";
 import Dropdown from "../components/dropdown";
 import InputSearch from "../components/InputSearch";
@@ -35,10 +33,10 @@ const FindAProvider = () => {
             <div className="w-full space-y-7">
               <Dropdown title="Insurance" />
               <div className="px-3 w-full">
-                <div className="flex px-5 items-center border-gray-400 border bg-white">
+                <div className="flex w-full px-5 items-center border-gray-400 border bg-white">
                   <SearchIcon className="h-8 text-gray-400 w-8" />
                   <input
-                    className="h-14  font-medium text-xl border-none focus:ring-transparent"
+                    className="h-14 font-medium text-xl border-none focus:ring-transparent"
                     type="text"
                     placeholder="Insurance"
                   />
@@ -50,12 +48,12 @@ const FindAProvider = () => {
             <div className="w-full space-y-7">
               <Dropdown title="Distance" />
               <div className="px-3 w-full">
-                  <select className="h-14 w-full px-5 text-gray-free border-gray-400 border bg-white font-medium text-xl focus:ring-transparent">
-                    <option>25 Miles</option>
-                    <option>75 Miles</option>
-                    <option>5 Miles</option>
-                    <option>45 Miles</option>
-                  </select>
+                <select className="h-14 w-full px-5 text-gray-free border-gray-400 border bg-white font-medium text-xl focus:ring-transparent">
+                  <option>25 Miles</option>
+                  <option>75 Miles</option>
+                  <option>5 Miles</option>
+                  <option>45 Miles</option>
+                </select>
               </div>
               <hr className="w-full" />
             </div>
