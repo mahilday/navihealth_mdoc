@@ -1,8 +1,8 @@
-const InputSearch = ({ title }) => {
+const InputSearch = ({ title, color }) => {
   return (
-    <div className="w-full sm:space-y-12 space-y-20">
+    <div className="w-full sm:space-y-12 py-32 space-y-20">
       <div className="w-full text-center">
-        <h1 className="text-6xl sm:px-3 sm:text-3xl md:text-5xl font-bold text-white">
+        <h1 className={`text-6xl sm:px-3 sm:text-3xl md:text-5xl font-bold text-${color}`}>
           {title}
         </h1>
       </div>

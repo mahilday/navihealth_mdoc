@@ -17,6 +17,12 @@
   .btnGreen:hover {
     @apply bg-transparent text-green-free border border-green-free;
   }
+  .btnGray {
+    @apply bg-transparent text-gray-free-2 px-8 py-3 rounded border border-gray-free-2;
+  }
+  .btnGray:hover {
+    @apply bg-transparent text-gray-600 border border-gray-600;
+  }
   .btnTransparent {
     @apply bg-transparent text-green-free  border border-green-free px-8 py-3 rounded-md;
   }

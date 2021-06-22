@@ -19,7 +19,7 @@ const Home = () => {
       <section id="topLanding" className="w-full relative h-screen">
         <img className="w-full object-cover h-5/6" src={callBg} alt="homepic" />
         <div className="w-full  flex content-center items-center absolute top-0 bg-opacity-30 h-5/6 bg-black">
-          <InputSearch title="A health directory. For you and your family." />
+          <InputSearch color="white" title="A health directory. For you and your family." />
         </div>
       </section>
       {/*  */}

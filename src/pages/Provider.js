@@ -16,14 +16,16 @@ import {
   StarIcon,
 } from "@heroicons/react/solid";
 import { useContext } from "react";
+import { useParams } from "react-router-dom";
 import ListItem from "../components/listItem";
 import ProvTitle from "../components/providerTitle";
 import RatingRange from "../components/ratingRange/ratingRange";
 import Star from "../components/star";
 import { providerContext } from "../contexts/providerContext";
 const Provider = () => {
+    const {id} = useParams()
   const { data } = useContext(providerContext);
-  let i = 0;
+  let i = id-1;
 
   return (
     <div className="w-screen py-32 space-y-20 bg-gray-50">

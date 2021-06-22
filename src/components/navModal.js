@@ -9,10 +9,10 @@ const NavModal = () => {
   return (
     <div className="flex flex-col space-y-5 items-center content-center justify-center">
       <ul>
-        <li className="border-t py-3 font-semibold flex">
-          <span className="w-44"><Link to="/provider">Find A Provider</Link></span>
+      <Link to="/providers"><li className="border-t py-3 font-semibold flex">
+          <span className="w-44">Find A Provider</span>
           <ArrowCircleRightIcon className="w-6 text-green-free h-6 ml-3" />
-        </li>
+        </li></Link>
         <li className="border-t py-3 font-semibold space-y-3 flex flex-col">
           <span className="w-44 ">Find A Facility</span>
           <div className="ml-2 space-y-2 ">

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Provider from "./pages/Provider";
 import { useContext } from "react";
 import { NavContext } from "./contexts/navContext";
+import FindAProvider from "./pages/findAProvider";
 
 function App() {
   const { functions, status } = useContext(NavContext);
@@ -18,7 +19,8 @@ function App() {
           onClick={() => functions.closeModal(status.facility.setFacModalOpen)}
         >
           <Route exact path="/" component={Home} />
-          <Route exact path="/provider" component={Provider} />
+          <Route exact path="/providers/:id" component={Provider} />
+          <Route exact path="/providers" component={FindAProvider} />
         </Switch>
       </div>
     </Router>
