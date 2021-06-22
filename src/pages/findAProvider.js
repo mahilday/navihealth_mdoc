@@ -23,20 +23,20 @@ const FindAProvider = () => {
         />
       </section>
       {/* filter */}
-      <section className="w-11/12 sm:space-y-10 md:space-y-10 md:w-10/12 mx-auto flex sm:flex-col md:flex-col">
+      <section className="w-11/12 sm:space-y-10 md:space-y-10 md:w-11/12 mx-auto flex sm:flex-col md:flex-col">
         <div className="items-center space-y-12 shadow-xl rounded-2xl sm:w-full md:w-11/12 w-3/12 bg-white">
           <div className="flex py-10 px-5 space-x-12 items-center">
             <FilterIcon className="w-20 h-20" />
             <h3 className="text-3xl font-semibold">Search Filter</h3>
           </div>
-          <div className="w-full sm:w-full md:w-11/12 space-y-10 px-12 py-5 mx-auto">
+          <div className="w-full sm:w-11/12 md:w-11/12 space-y-10 px-12 py-5 mx-auto">
             <div className="w-full space-y-7">
               <Dropdown title="Insurance" />
               <div className="px-3 w-full">
                 <div className="flex w-full px-5 items-center border-gray-400 border bg-white">
                   <SearchIcon className="h-8 text-gray-400 w-8" />
                   <input
-                    className="h-14 font-medium text-xl border-none focus:ring-transparent"
+                    className="h-14 w-11/12 font-medium text-xl border-none focus:ring-transparent"
                     type="text"
                     placeholder="Insurance"
                   />
