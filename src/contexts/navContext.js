@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useRef, useState } from "react";
 import homeLoc from "../assets/home-loc.png";
 
 export const NavContext = createContext();
@@ -46,7 +46,8 @@ const NavProvider = ({ children }) => {
       endNote: "See All Specialties",
     },
   ];
-
+  let containerNavClose = useRef(null);
+  let containFacClose = useRef(null)
   const openModal = (modal) => {
     modal(true);
   };
@@ -55,6 +56,22 @@ const NavProvider = ({ children }) => {
   };
   const toggleModal = (modal, state) => {
     modal(!state);
+  };
+  const handleClickOutside = (event) => {
+    if (
+      containerNavClose.current &&
+      !containerNavClose.current.contains(event.target)
+    ) {
+      setNavOpen(false);
+    } 
+  };
+  const handleFacClick = (event) => {
+    if (
+      containFacClose.current &&
+      !containFacClose.current.contains(event.target)
+    ) {
+      setFacModalOpen(false);
+    } 
   };
   const contextVal = {
     status: {
@@ -75,9 +92,15 @@ const NavProvider = ({ children }) => {
       openModal,
       closeModal,
       toggleModal,
+      handleClickOutside,
+      handleFacClick
     },
     data: {
       facilityDetail,
+    },
+    refs: {
+      containerNavClose,
+      containFacClose
     },
   };
   return (

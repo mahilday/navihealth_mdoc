@@ -3,15 +3,30 @@ import Nav from "./components/nav";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Provider from "./pages/Provider";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { NavContext } from "./contexts/navContext";
 import FindAProvider from "./pages/findAProvider";
 
 function App() {
   const { functions, status } = useContext(NavContext);
+
+  useEffect(() => {
+    // If the item is active (ie open) then listen for clicks
+    if (status.mobileNav.navOpen) {
+      window.addEventListener("click",
+        functions.handleClickOutside
+      );
+    }
+
+    return () => {
+      window.removeEventListener("click",
+        functions.handleClickOutside
+      );
+    };
+  });
   return (
     <Router>
-      <div className="App">
+      <div className="App" >
         <div className="sticky top-0 z-50">
           <Nav />
         </div>

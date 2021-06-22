@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
 
 const NavModal = () => {
-  const { status, functions, data } = useContext(NavContext);
+  const { status, functions, data, refs } = useContext(NavContext);
   return (
-    <div className="flex flex-col space-y-5 items-center content-center justify-center">
+    <div className="flex flex-col space-y-5 items-center content-center justify-center" ref={refs.containerNavClose}>
       <ul>
       <Link to="/providers"><li className="border-t py-3 font-semibold flex">
           <span className="w-44">Find A Provider</span>
